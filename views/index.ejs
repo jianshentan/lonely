@@ -53,6 +53,12 @@
 				min-width: 120px;
 				border-radius: 3px;
 			}
+			@media (min-width: 320px) and (max-width: 576px) {
+				img {
+					width: 80vw;
+				}
+			}
+
 		</style>
 	
 		<script>
@@ -68,11 +74,7 @@
 	</head>
 
 	<body>
-		<% if (mobile != "true") { %>
-			<script>mobile = false;</script>
-		<% } else { %>
-			<script>mobile = true;</script>
-		<% } %>
+
 		<div class="center" style="margin-bottom:10vw;">
 			<img src="/images/lonely-hat-image.png">
 			<br><br><br><br><br>
